@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.contenedor{
+    width: 90%;
+    margin:auto;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: space-around;
+    align-items:center;
+    box-sizing: border-box;
+    max-width: 1200px;
+}
+.enlaces{
+    animation:ease-in 1s;
+}
+.Opciones{
+    color: rgb(246, 246, 248);
+    text-shadow: 5px rgb(122, 146, 255);
+    text-decoration: none;
+    font-weight: 500;
+    margin: 1.5rem;
+    padding: 5px 15px;
+    box-shadow: 5px 0 rgb(238, 76, 76) inset;
+    transition:  all 2s ease;
+    background-color:rgb(62, 106, 173);
+    border-radius: 15px;
+}
+header{
+    width: 100%;
+    height: 600px;
+    background: #0f0c29;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(240, 28%, 19%, 0.849), hsla(244, 38%, 28%, 0.76), hsla(246, 55%, 10%, 0.712)), url(./img/1664.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(240, 28%, 19%, 0.849), hsla(244, 38%, 28%, 0.76), hsla(246, 55%, 10%, 0.712)), url(./img/1664.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items:center;
+    justify-content:start;
+    flex-direction: column;
+    text-align: center;
+}
+.textos-header h1{
+    font-size: 60px;
+    color: #fff;
+
+}
+.textos-header h2{
+    font-size: 40;
+    font-weight: 300;
+    color: #fff;
+    
+}
+.subtitle{
+    padding-bottom: 10px;
+}
+/*about*/
+.titulo-quienes-somos{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(151, 44, 151);
+    padding-bottom: 50px;
+}
+.capa_presentacion{
+    background-color: whitesmoke;
+    padding-bottom: 30px;
+}
+.presentation{
+    padding-top: 0;
+    text-align:center;
+    margin: 0 20%;
+    font-size: 20px;
+    align-items: center;
+}
+
+.presentation__copy{
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.presentation2{
+    padding-top: 70px;
+    text-align: center;
+    margin: 0 20%;
+    font-size: 20px;
+}
+
+.presentation__picture{
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: top;
+}
+.presentation__cta{
+    display: inline-block;
+    margin-top: 30px;
+    background: rgb(62, 106, 173);
+    color: #fff;
+    text-decoration: none;
+    padding: 18px;
+    border-radius: 40px;
+    align-items: center;
+}
+ .about{
+     min-height:400px;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     row-gap: 50px;
+     justify-items: center;
+     align-items: center;
+     margin: 5%;
+     font-size: 20px;
+     text-align: center;
+}
+.acerca-de-nosotros{
+    background-color: lavender;
+}
+
+ .about__img{
+     text-align: center;
+}
+ .about__img--left{
+     text-align: left;
+}
+.about__img--right{
+    text-align: right;
+}
+.about__picture{
+    max-width: 70%;
+}
+.about__paragraph{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+.about__texts{
+    margin: 0 5%;
+}
+.portafolio{
+    background: -webkit-linear-gradient(to right, hsla(240, 28%, 19%, 0.849), hsla(244, 38%, 28%, 0.76), hsla(246, 55%, 10%, 0.712));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(240, 28%, 19%, 0.849), hsla(244, 38%, 28%, 0.76), hsla(246, 55%, 10%, 0.712));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
+}
+.contenedor2{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 30%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273,91%,27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+.titulo-proyectos{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    padding-bottom: 30px;
+}
+
+.que-dicen-nosotros{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.contenedor3{
+    background-color: #1c2c4c;
+    padding: 40px 0;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #213c57;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 70%;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+.contenedor4{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+
+footer .contacto{
+    height:600px;
+    background-image: url(../img/footer.png);
+    background-position:center;
+    padding:60px 0;
+}
+
+footer .footer-textos{
+    text-align: center;
+    color: #fff;
+    font-size:25px;
+}
+
+footer .footer-textos p{
+    font-size: 14px;
+    margin:15px 0 30px 0;
+    color: #999999;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+    
+}
+footer .contacto  input[type="text"], footer .contacto  input[type="email"],
+footer .contacto  textarea{
+    width: 100%;
+    margin: 5px 0;
+    padding: 15px 20px;
+    background: none;
+    border-radius: 5px;
+    color:rgb(204, 204, 204);
+    border: 2px solid rgba(204, 204, 204, 0.383);
+    font-family: 'lato';
+    font-weight: 300;
+}
+
+footer .contacto  textarea{
+    height:150px;
+    max-height: 150px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+}
+.derecha{
+   display: flex;
+   justify-content: flex-end;
+}
+footer .contacto  input[type="submit"]{
+    display:block;
+    width: 100px;
+    margin:10px 0;
+    padding: 10px 15px;
+    background: none;
+    border:1px solid #15a4fa;
+    border-radius: 5px;
+    color:#fff;
+    cursor: pointer;
+    float:right;
+
+}
+footer .contacto  input[type="submit"]:hover{
+    background: #15a4fa;
+    color: #fff;
+}
+
+.footer{
+    height:200px;
+    background: #000;
+}
+
+footer .contacto{
+    background: -webkit-linear-gradient(to right, hsla(240, 28%, 19%, 0.849), hsla(244, 38%, 28%, 0.76), hsla(246, 55%, 10%, 0.712)), url(./img/1664.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(240, 28%, 19%, 0.849), hsla(244, 38%, 28%, 0.76), hsla(246, 55%, 10%, 0.712)), url(./img/1664.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
